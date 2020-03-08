@@ -25,6 +25,7 @@ class App extends React.Component {
 
   render() {
     return (
+      <ImageBackground source={require('../assets/images/carmogramback.png')} style={{width: '100%', height: '100%'}}></ImageBackground>
         <View style={styles.container}>
           <Modal
               visible={this.state.modalVisible}
@@ -33,13 +34,25 @@ class App extends React.Component {
           >
             <View style={styles.modalContainer}>
               <View style={styles.innerContainer}>
-                <Text>1=Satisfactory  2=Unsatisfactory</Text>
-                <Text>How is your physical health?</Text>
-                <Text>How is your mental health?</Text>
-                <Text>How is your mood today?</Text>
+                <Text style={{fontSize: 35}}>1 = Satisfactory </Text>
+                </View>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 30}}>
+                <Text style={{fontSize: 35}}>2 = Unsatisfactory </Text>
+                <Text style={{fontSize: 30}}>How is your physical health?</Text>
+                <TextInput style={{width: 300, height: 30, borderWidth:3}}></TextInput>
+                </View>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 80}}>
+                <Text style={{fontSize: 30}}>How is your mental health?</Text>
+                <TextInput style={{width: 300, height: 30, borderWidth:3}}></TextInput>
+                </View>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 80}}>
+                <Text style={{fontSize: 30}}>How is your mood today?</Text>
+                <TextInput style={{width: 300, height: 30, borderWidth:3}}></TextInput>
+                </View>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 80}}>
                 <Button
                     onPress={() => this.closeModal()}
-                    title="Close"
+                    title="Next"
                 >
                 </Button>
               </View>
