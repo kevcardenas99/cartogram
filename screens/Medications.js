@@ -12,7 +12,7 @@ class Medications extends Component{
             <View style={{flex: 10, alignItems:'center'}}>
               <TextInput placeholder='Please enter a medication'style={{height: 25, fontSize: 25}}/>
               <View style={{height: 10}}></View>
-              <TouchableOpacity style={styles.butt} onPress={() => this.props.navigation.navigate('Input')}>
+              <TouchableOpacity style={styles.butt}>
                 <Text style={styles.buttText}>Add</Text>
               </TouchableOpacity>
             </View>

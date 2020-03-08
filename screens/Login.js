@@ -1,7 +1,7 @@
-import React, * as react from 'react';
+import React, {Component} from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, ImageBackground, StatusBar, Image} from 'react-native';
 
-class Login extends react.Component{
+class Login extends Component{
   render(){
     return(
       <ImageBackground source={require('../assets/images/carmogramback.png')} style={styles.container}>
@@ -46,7 +46,7 @@ export default Login;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '000001',
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%',

@@ -7,7 +7,7 @@ import LoadScreen from './screens/LoadScreen';
 import UserInput from './screens/UserInput';
 import Medications from './screens/Medications';
 import Chart from './screens/Chart';
-import Wade from './screens/Wade';
+import Home from './screens/Home';
 
 const Stack = createStackNavigator();
 
@@ -16,12 +16,12 @@ export default class App extends Component{
     return(
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerTransparent: true }}>
-          <Stack.Screen name='Home' component={LoadScreen} options={{title: ''}} />
+          <Stack.Screen name='Load' component={LoadScreen} options={{title: ''}} />
           <Stack.Screen name='Login' component={Login} options={{title: '', headerShown: false}} />
           <Stack.Screen name='Input' component={UserInput} options={{title: 'Please Enter Your Information'}} />
           <Stack.Screen name='Medications' component={Medications} />
           <Stack.Screen name='Chart' component={Chart} />
-          <Stack.Screen name='Wade' component={Wade} />
+          <Stack.Screen name='Home' component={Home} />
         </Stack.Navigator>
       </NavigationContainer>
     );

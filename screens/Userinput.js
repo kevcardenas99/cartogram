@@ -9,27 +9,27 @@ class UserInput extends Component {
         <View style={{flexDirection: 'column', justifyContent: 'flex-end', padding: 30}}>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 70}}>
             <Text style={{fontSize: 30}}>First Name: </Text>
-            <TextInput style={{width: 200, height: 30, borderWidth:2}} />
+            <TextInput style={{width: 200, height: 30, fontSize: 30}} placeholder='First' />
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 70}}>
             <Text style={{fontSize: 30}}>Last Name: </Text>
-            <TextInput style={{width: 200, height: 30, borderWidth:2}} />
+            <TextInput style={{width: 200, height: 30, fontSize: 30}} placeholder='Last' />
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 70}}>
             <Text style={{fontSize: 30}}>Age: </Text>
-            <TextInput style={{width: 200, height: 30, borderWidth:2}} />
+            <TextInput style={{width: 200, height: 30, fontSize:30}} placeholder= 'Age' />
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 70}}>
             <Text style={{fontSize: 30}}>Gender: </Text>
-            <TextInput style={{width: 200, height: 30, borderWidth:2}} />
+            <TextInput style={{width: 200, height: 30, fontSize:30}} placeholder='Gender' />
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 70}}>
             <Text style={{fontSize: 30}}>Height: </Text>
-            <TextInput style={{width: 200, height: 30, borderWidth:2}} />
+            <TextInput style={{width: 200, height: 30, fontSize:30}} placeholder='Height' />
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 70}}>
             <Text style={{fontSize: 30}}>Weight: </Text>
-            <TextInput style={{width: 200, height: 30, borderWidth:2}} />
+            <TextInput style={{width: 200, height: 30, fontSize:30}} placeholder='Weight' />
           </View>
         </View>
         <View style={{alignItems:'center'}}>

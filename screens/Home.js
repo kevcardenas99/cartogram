@@ -25,7 +25,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <ImageBackground source={require('../assets/images/carmogramback.png')} style={{width: '100%', height: '100%'}}></ImageBackground>
+      <ImageBackground source={require('../assets/images/carmogramback.png')} style={{width: '100%', height: '100%'}}>
         <View style={styles.container}>
           <Modal
               visible={this.state.modalVisible}
@@ -63,6 +63,7 @@ class App extends React.Component {
               title="Start"
           />
         </View>
+      </ImageBackground>
     );
   }
 }
