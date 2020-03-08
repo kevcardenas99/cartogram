@@ -29,10 +29,10 @@ class Login extends Component{
             </TouchableOpacity>
           </View>
           <View style={{flexDirection: 'row' }}>
-            <TouchableOpacity style={styles.butt} onPress={() => this.props.navigation.navigate('Input')}>
+            <TouchableOpacity style={styles.butt} onPress={() => this.props.navigation.navigate('Medications')}>
               <Text style={styles.buttText} >Login</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.butt}>
+            <TouchableOpacity style={styles.butt} onPress={() => this.props.navigation.navigate('Input')}>
               <Text style={styles.buttText}>Sign Up</Text>
             </TouchableOpacity>
           </View>

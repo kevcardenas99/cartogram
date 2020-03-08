@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, ImageBackground, StatusBar, Image, Button, Switch} from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, ImageBackground, StatusBar, Image, Button} from 'react-native';
+import { Switch } from 'react-native-gesture-handler';
 
-class UserInput extends Component {
+class Conditions extends Component {
   render(){
     return(
       <ImageBackground source={require('../assets/images/carmogramback.png')} style={styles.container}>
@@ -9,40 +10,36 @@ class UserInput extends Component {
         <View style={{flexDirection: 'column', justifyContent: 'flex-end', padding: 30}}>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 70}}>
             <Text style={{fontSize: 30}}>First Name: </Text>
-            <TextInput style={{width: 200, height: 30, borderWidth:2}} />
+            <TextInput style={{width: 200, height: 30, borderWidth:2}}></TextInput>
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 70}}>
             <Text style={{fontSize: 30}}>Last Name: </Text>
-            <TextInput style={{width: 200, height: 30, borderWidth:2}} />
+            <TextInput style={{width: 200, height: 30, borderWidth:2}}></TextInput>
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 70}}>
             <Text style={{fontSize: 30}}>Age: </Text>
-            <TextInput style={{width: 200, height: 30, borderWidth:2}} />
+            <TextInput style={{width: 200, height: 30, borderWidth:2}}></TextInput>
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 70}}>
             <Text style={{fontSize: 30}}>Gender: </Text>
-            <TextInput style={{width: 200, height: 30, borderWidth:2}} />
+            <TextInput style={{width: 200, height: 30, borderWidth:2}}></TextInput>
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 70}}>
             <Text style={{fontSize: 30}}>Height: </Text>
-            <TextInput style={{width: 200, height: 30, borderWidth:2}} />
+            <TextInput style={{width: 200, height: 30, borderWidth:2}}></TextInput>
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', height: 70}}>
             <Text style={{fontSize: 30}}>Weight: </Text>
-            <TextInput style={{width: 200, height: 30, borderWidth:2}} />
+            <TextInput style={{width: 200, height: 30, borderWidth:2}}></TextInput>
           </View>
         </View>
-        <View style={{alignItems:'center'}}>
-        <TouchableOpacity style={styles.butt} onPress={() => this.props.navigation.navigate('Medications')}>
-              <Text style={styles.buttText}>Next</Text>
-        </TouchableOpacity>
-        </View>
+        <Button title="Hi" />
       </ImageBackground>
     );
   }
 }
 
-export default UserInput;
+export default Conditions;
 
 const styles = StyleSheet.create({
   container: {
