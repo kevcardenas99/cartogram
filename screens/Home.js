@@ -34,8 +34,8 @@ class App extends React.Component {
             <View style={styles.modalContainer}>
               <View style={styles.innerContainer}>
                 <Text>1=Satisfactory  2=Unsatisfactory</Text>
-                <Text>Describe your physical health?</Text>
-                <Text>Describe your mental health?</Text>
+                <Text>How is your physical health?</Text>
+                <Text>How is your mental health?</Text>
                 <Text>How is your mood today?</Text>
                 <Button
                     onPress={() => this.closeModal()}
