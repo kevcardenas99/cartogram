@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     padding:10
   },
   resetPass:{
-    fontSize: 16,
+    fontSize: 18,
     color: '#32a8a2',
     marginBottom: 30
   },
