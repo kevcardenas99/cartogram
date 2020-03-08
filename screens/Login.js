@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, ImageBackground} from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, ImageBackground, StatusBar, Image} from 'react-native';
 
 class Login extends Component{
   render(){
     return(
       <ImageBackground source={require('../assets/images/carmogramback.png')} style={styles.container}>
+        <StatusBar barStyle="dark-content" />
+        <Image source={require('../assets/images/carmogramlogo.png')} style={{width: 150, height:162}}/>
         <Text style={styles.logo}>CARMOGRAM</Text>
         <View style={styles.inputView}>
           <TextInput  
@@ -77,7 +79,7 @@ const styles = StyleSheet.create({
   butt:{
     width:'35%',
     marginHorizontal: 15,
-    backgroundColor:'#e61717',
+    backgroundColor:'black',
     borderRadius:20,
     height:60,
     marginBottom:20,
@@ -85,8 +87,8 @@ const styles = StyleSheet.create({
     justifyContent:'center',
   },
   buttText:{
-    fontSize: 15,
-    color: '#32a8a2'
+    fontSize: 30,
+    color: 'white'
   },
 });
 
