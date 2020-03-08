@@ -46,7 +46,7 @@ export default Login;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#003f5c',
+    backgroundColor: '000001',
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%',
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   },
   inputView:{
     width:'75%',
-    backgroundColor:'#32a8a2',
+    backgroundColor:'#FFFFFF',
     borderRadius:25,
     height:60,
     marginBottom:20,
