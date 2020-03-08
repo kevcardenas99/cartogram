@@ -12,7 +12,7 @@ class Login extends Component{
           <TextInput  
             style={styles.inputText}
             placeholder="Email..." 
-            placeholderTextColor="#FFFFFF"
+            placeholderTextColor="black"
           />
           </View>
           <View style={styles.inputView}>
@@ -20,7 +20,7 @@ class Login extends Component{
               secureTextEntry
               style={styles.inputText}
               placeholder="Password..." 
-              placeholderTextColor="#FFFFFF"
+              placeholderTextColor="black"
             />
           </View>
           <View>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   },
   inputView:{
     width:'75%',
-    backgroundColor:'#32A8A2',
+    backgroundColor:'white',
     borderRadius:25,
     height:60,
     marginBottom:20,
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   },
   inputText:{
     fontSize: 20,
-    color:'#ffffff',
+    color:'black',
   },
   butt:{
     width:'35%',
