@@ -29,7 +29,7 @@ class Login extends Component{
             </TouchableOpacity>
           </View>
           <View style={{flexDirection: 'row' }}>
-            <TouchableOpacity style={styles.butt} onPress={() => this.props.navigation.navigate('Confirmation')}>
+            <TouchableOpacity style={styles.butt} >
               <Text style={styles.buttText} >Login</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.butt}>

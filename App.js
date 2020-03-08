@@ -11,9 +11,9 @@ export default class App extends Component{
   render(){
     return(
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerTransparent: true}}>
-          <Stack.Screen name='Home' component={Login} options={{title: ''}} />
-          <Stack.Screen name='Confirmation' component={LoadScreen} options={{title: ''}} />
+        <Stack.Navigator screenOptions={{ headerTransparent: true }}>
+          <Stack.Screen name='Home' component={LoadScreen} options={{title: ''}} />
+          <Stack.Screen name='Login' component={Login} options={{title: '', headerShown: false}} />
         </Stack.Navigator>
       </NavigationContainer>
     );

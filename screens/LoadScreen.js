@@ -14,7 +14,7 @@ class Load extends Component {
               <Image source={require('../assets/images/carmogramlogo.png')} style={{width: 300, height:323}}/>
             </View>
             <View style={{flex: 6, alignItems: 'center'}}>
-              <TouchableOpacity style={{ justifyContent: 'center', alignItems: 'center', height: 45, width: 250, backgroundColor: 'black', borderRadius: 10}}> 
+              <TouchableOpacity style={{ justifyContent: 'center', alignItems: 'center', height: 45, width: 250, backgroundColor: 'black', borderRadius: 10}} onPress={() => this.props.navigation.navigate('Login')}> 
                 <Text style={{color: 'white', fontSize: 40}}>Let's Go!</Text>
               </TouchableOpacity>
             </View>
