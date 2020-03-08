@@ -12,7 +12,7 @@ class Login extends react.Component{
           <TextInput  
             style={styles.inputText}
             placeholder="Email..." 
-            placeholderTextColor="#003f5c"
+            placeholderTextColor="#FFFFFF"
           />
           </View>
           <View style={styles.inputView}>
@@ -20,7 +20,7 @@ class Login extends react.Component{
               secureTextEntry
               style={styles.inputText}
               placeholder="Password..." 
-              placeholderTextColor="#003f5c"
+              placeholderTextColor="#FFFFFF"
             />
           </View>
           <View>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   },
   inputView:{
     width:'75%',
-    backgroundColor:'#FFFFFF',
+    backgroundColor:'#32A8A2',
     borderRadius:25,
     height:60,
     marginBottom:20,
