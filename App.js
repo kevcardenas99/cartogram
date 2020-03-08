@@ -8,6 +8,7 @@ import UserInput from './screens/UserInput';
 import Medications from './screens/Medications';
 import Chart from './screens/Chart';
 import Wade from './screens/Wade';
+import './fonts/FiraSans-Regulat.ttf';//font for use
 
 const Stack = createStackNavigator();
 
