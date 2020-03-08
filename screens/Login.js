@@ -1,41 +1,45 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, ImageBackground} from 'react-native';
 
-export default function App() {
-  return (
-    <ImageBackground source={require('./cartogram/assets/images/carmogramback.png')} style={styles.container}>
-      <Text style={styles.logo}>CARMOGRAM</Text>
-      <View style={styles.inputView}>
-        <TextInput  
+class Login extends Component{
+  render(){
+    return(
+      <ImageBackground source={require('../assets/images/carmogramback.png')} style={styles.container}>
+        <Text style={styles.logo}>CARMOGRAM</Text>
+        <View style={styles.inputView}>
+          <TextInput  
             style={styles.inputText}
             placeholder="Email..." 
             placeholderTextColor="#003f5c"
-           />
-      </View>
-      <View style={styles.inputView}>
-        <TextInput  
-            secureTextEntry
-            style={styles.inputText}
-            placeholder="Password..." 
-            placeholderTextColor="#003f5c"
+          />
+          </View>
+          <View style={styles.inputView}>
+            <TextInput  
+              secureTextEntry
+              style={styles.inputText}
+              placeholder="Password..." 
+              placeholderTextColor="#003f5c"
             />
-      </View>
-      <View>
-        <TouchableOpacity>
-          <Text style={styles.resetPass}>Reset Password</Text>
-        </TouchableOpacity>
-      </View>
-      <View style={{flexDirection: 'row' }}>
-        <TouchableOpacity style={styles.butt}>
-          <Text style={styles.buttText}>Login</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.butt}>
-          <Text style={styles.buttText}>Sign Up</Text>
-        </TouchableOpacity>
-      </View>
-    </ImageBackground>
-  );
+          </View>
+          <View>
+            <TouchableOpacity>
+              <Text style={styles.resetPass}>Reset Password</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={{flexDirection: 'row' }}>
+            <TouchableOpacity style={styles.butt} onPress={() => this.props.navigation.navigate('Confirmation')}>
+              <Text style={styles.buttText} >Login</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.butt}>
+              <Text style={styles.buttText}>Sign Up</Text>
+            </TouchableOpacity>
+          </View>
+      </ImageBackground>
+    );
+  }
 }
+
+export default Login;
 
 const styles = StyleSheet.create({
   container: {
@@ -50,7 +54,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontStyle: 'italic',
     fontSize: 50,
-    color,
     marginBottom:40
   },
   inputView:{

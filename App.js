@@ -1,31 +1,23 @@
-import React from 'react';
-import {StyleSheet, Text, View, TextInput, Button, StatusBar, Image, ImageBackground} from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import React, { Component } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-export default function App(){
-  return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgb(170,255,255)'}}>
-      <StatusBar barStyle="dark-content" />
-      <ImageBackground source={require('./assets/images/carmogramback.png')} style={{width: '100%', height: '100%'}}>
-        <View style={{flex:1, flexDirection: 'column'}}>
-          <View style={{flex:2}}></View>
-          <View style={{flex: 10, alignItems: 'center'}}>
-            <Image source={require('./assets/images/carmogramlogo.png')} style={{width: 300, height:323}}/>
-          </View>
-          <View style={{flex: 6, alignItems: 'center'}}>
-            <TouchableOpacity style={{ justifyContent: 'center', alignItems: 'center', height: 45, width: 250, backgroundColor: 'black', borderRadius: 10}}> 
-              <Text style={{color: 'white', fontSize: 40}}>Let's Go!</Text> 
-            </TouchableOpacity>
-          </View>
-          <View>      
+import { AuthContext } from "./Context";
 
-          </View>
-        </View>
-      </ImageBackground>
-    </View>
-  );
+import Login from './screens/Login';
+import LoadScreen from './screens/LoadScreen';
+
+const Stack = createStackNavigator();
+
+export default class App extends Component{
+  render(){
+    return(
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Confirmation" component={LoadScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    );
+  }
 }
-
-const styles = StyleSheet.create({
-  
-});
